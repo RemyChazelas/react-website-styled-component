@@ -7,7 +7,6 @@ const Rb = styled.div`
   align-items: center;
   width: 40%;
   position: relative;
-  /* z-index: 10; */
   svg {
     width: 100%;
     height: auto;

@@ -14,19 +14,21 @@ const AboutSection = styled.section`
   width: 100vw;
   position: relative;
   display: flex;
+  background: rgb(238,174,202);
+  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
-const Waves = styled.img`
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: -1rem;
-`;
+// const Waves = styled.img`
+//   width: 100%;
+//   height: auto;
+//   position: absolute;
+//   top: -1rem;
+// `;
 const Hand = styled.div`
   position: absolute;
-  bottom: -1rem;
+  bottom: -5px;
   right: 0;
 
   @media only Screen and (max-width: 40em) {
@@ -120,7 +122,7 @@ const AboutText = styled.div`
 const About = () => {
   return (
     <AboutSection id="about">
-      <Waves src={wave} alt="" />
+      {/* <Waves src={wave} alt="" /> */}
       <Hand>
         <img src={hand} alt="" />
       </Hand>
@@ -139,10 +141,7 @@ const About = () => {
             </Human>
 
             <Text>
-              We help our customers to tell about themselves, to grow and stand
-              out in an increasingly competitive digital world, through creative
-              projects that are able to attract and involve, creating strategic
-              value.
+              BBJUL is coming from the space with a mission to conquer the bsc space. With the same contract as Shibazilla, an experienced dev & marketer, we aim to reach the shibazilla & dogezilla marketcap using the same method as shibazilla, stealth launch.
             </Text>
             <div>
               <Circle style={{ backgroundColor: "var(--purple)" }} />

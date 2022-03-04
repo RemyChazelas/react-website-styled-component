@@ -2,8 +2,20 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #35353f;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(rgba(238,174,202), rgba(148,187,233));
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
 :root{
-   --background: #eff7f9;
+   --background: #35353f;
    --black:#0a0b10;
    --purple:#803bec;
    --pink:#e5a1f8;

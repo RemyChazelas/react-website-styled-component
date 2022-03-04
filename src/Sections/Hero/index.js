@@ -6,7 +6,7 @@ import pinkBlob from "../../assets/blobPink.png";
 import purpleBlob from "../../assets/blob purple.png";
 import whiteBlob from "../../assets/blob white.png";
 import arrow from "../../assets/Arrow Right.svg";
-import Mobile from "../../assets/mobile.svg";
+import Mobile from "../../assets/bbjul.png";
 
 const move = keyframes`
 0% { transform: translateY(-5px)  }
@@ -17,17 +17,19 @@ const move = keyframes`
 const HomeSection = styled.section`
   width: 100vw;
   height: 45vw;
-  background-color: #0a0b10;
+  background: rgb(238,174,202);
+  background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   display: flex;
   justify-content: center;
   position: relative;
   @media only Screen and (max-width: 48em) {
     height: 70vw;
     display: block;
+    padding-bottom: 20rem;
+
   }
   @media only Screen and (max-width: 420px) {
     height: auto;
-    padding-bottom: 2rem;
   }
 `;
 
@@ -75,20 +77,22 @@ const MainContent = styled.div`
 
 const MobileSvg = styled.img`
   max-width: 100%;
-  width: calc(30% + 20vw);
+  width: 30vw;
   height: auto;
   z-index: 7;
   animation: ${move} 2.5s ease infinite;
+  border-radius:0 0 30% 30%;
+  opacity: 0.9;
+
   @media only Screen and (max-width: 48em) {
-    align-self: flex-start;
     position: absolute;
+    left:25%;
     bottom: 0;
     width: calc(30% + 20vw);
-    opacity: 0.5;
   }
-  @media only Screen and (max-width: 40em) {
+  /* @media only Screen and (max-width: 40em) {
     display: none;
-  }
+  } */
 `;
 
 const Lb = styled.div`
@@ -110,6 +114,7 @@ const Lb = styled.div`
   }
   @media only Screen and (max-width: 40em) {
     filter: none;
+    
   }
 `;
 
@@ -141,12 +146,14 @@ const Title = styled.h1`
 `;
 
 const SubText = styled.h5`
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.5rem + 0.8vw);
   color: var(--nav2);
 `;
 
 const CTA = styled.button`
-  background-color: var(--white);
+  background: #AFB7E0;
+  box-shadow:  5px 5px 10px #7b809d,
+              -5px -5px 10px #e4eeff;
   color: #0a0b10;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
@@ -166,16 +173,19 @@ const CTA = styled.button`
   }
   &:hover {
     transform: scale(1.1);
+    
   }
   &:active {
-    transform: scale(0.9);
+    background: #AFB7E0;
+    box-shadow: inset 5px 5px 10px #7b809d,
+                inset -5px -5px 10px #e4eeff;
   }
 `;
 
 const HeroSection = () => {
   return (
     <HomeSection id="home">
-      <Blobs>
+      {/* <Blobs>
         <PinkBlob>
           <img src={pinkBlob} alt="" width="400" height="400" />{" "}
         </PinkBlob>
@@ -185,27 +195,30 @@ const HeroSection = () => {
         <PurpleBlob>
           <img src={purpleBlob} alt="" width="400" height="400" />
         </PurpleBlob>
-      </Blobs>
+      </Blobs> */}
 
       <MainContent id="home">
         <Lb id="leftBlock">
-          <Topic>
-            <Circle />
-            <span>We Build Web</span>
-          </Topic>
-          <Title>Transforming your digital presence</Title>
           <SubText>
-            we help fast growing companies build award winning websites
+            {/* <Circle /> */}
+            BIENVENUE SUR
           </SubText>
+          <Title>BBJUL</Title>
+          <SubText>
+            Le moyen le plus simple de s'enrichir en bande organisée.
+          </SubText>
+          <Title>15% REWARDS BNB</Title>
+          <SubText>le ??/12 sur la BSC et Pancakeswap</SubText>
+
           <CTA>
-            Get in touch &nbsp;
+            LOVNI &nbsp;
             <img src={arrow} alt="cta" width="100" height="100" />
           </CTA>
         </Lb>
 
         <MobileSvg
           src={Mobile}
-          alt="Mobile Svg"
+          alt="BBjul"
           srcset=""
           width="400"
           height="400"

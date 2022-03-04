@@ -234,21 +234,21 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        <img src={logo} alt="BBJUL" />
+        <h3>BBJUL</h3>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
-          Home
+          LOVNI
         </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
-          About Us
+          Le x100
         </a>
         <a href="#services" onClick={(e) => scrollUp("services", e)}>
-          Services
+          KIT-E
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <Button>Contact Us</Button>
+          <Button>CONTACT</Button>
         </a>
       </Nav>
       <HamburgerBtn clicked={click} onClick={() => setClick(!click)}>
@@ -256,16 +256,16 @@ const Header = () => {
       </HamburgerBtn>
       <MobileMenu clicked={click}>
         <a href="#home" onClick={(e) => handleClick("home", e)}>
-          Home
+          LOVNI
         </a>
         <a href="#about" onClick={(e) => handleClick("about", e)}>
-          About Us
+          Le x100
         </a>
         <a href="#services" onClick={(e) => handleClick("services", e)}>
-          Services
+          KIT-E
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-          <Button>Contact Us</Button>
+          <Button>CONTACT</Button>
         </a>
       </MobileMenu>
     </Headers>

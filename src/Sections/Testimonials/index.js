@@ -14,6 +14,8 @@ const Section = styled.div`
   align-items: center;
   width: 100%;
   padding: 5rem 0;
+  background: rgb(238,174,202);
+  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 `;
 
 const Title = styled.h1`
@@ -84,26 +86,26 @@ const Testimonials = () => {
       <Carousal>
         <Slider {...settings}>
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly
-        recommend CodeBucks. It has been amazing to have them."
+            text="BBJUL has been essential part of our business. I would definetly
+        recommend BBJUL. It has been amazing to have them."
             name="Jenny (CodeCall)"
             image="avatar-1"
           />
 
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
+            text="BBJUL has been essential part of our business. I would definetly recommend BBJUL. It has been amazing to have them."
             name="Jenny (CodeCall)"
             image="avatar-2"
           />
 
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
+            text="BBJUL has been essential part of our business. I would definetly recommend BBJUL. It has been amazing to have them."
             name="Jenny (CodeCall)"
             image="avatar-3"
           />
 
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
+            text="BBJUL has been essential part of our business. I would definetly recommend BBJUL. It has been amazing to have them."
             name="Jenny (CodeCall)"
             image="avatar-4"
           />
