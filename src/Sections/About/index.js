@@ -31,7 +31,9 @@ const Main = styled.div`
 const Title = styled.h1`
   font-size: 2rem;
   display: inline-block;
+  letter-spacing:-.5px;
   color: var(--black);
+  font-weight: 700;
 `;
 
 const CurvedLine = styled.div`

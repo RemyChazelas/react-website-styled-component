@@ -26,7 +26,6 @@ const Logo = styled.a`
   align-items: center;
   width: 3rem;
   height: auto;
-  cursor: pointer;
   img {
     margin-right: 0.5rem;
   }
@@ -231,9 +230,8 @@ const Header = () => {
 
   return (
     <Headers ref={ref}>
-      <Logo>
+      <Logo href="#home" onClick={(e) => scrollUp("home", e)}>
         <img src={checatcoin} alt="checat coin logo" />
-        {/* <h3>OnlyCats</h3> */}
       </Logo>
       <Nav>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
