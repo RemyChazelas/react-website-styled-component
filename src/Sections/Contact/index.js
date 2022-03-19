@@ -31,6 +31,10 @@ const Title = styled.h1`
     transform: translate(-50%, 0.5rem);
     border-bottom: 2px solid var(--yellow);
   }
+  @media only Screen and (max-width: 40em) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 
 const Icons = styled.div`
