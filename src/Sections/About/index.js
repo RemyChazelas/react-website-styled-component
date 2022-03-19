@@ -34,6 +34,9 @@ const Title = styled.h1`
   letter-spacing:-.5px;
   color: var(--black);
   font-weight: 700;
+  @media only Screen and (max-width: 40em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const CurvedLine = styled.div`
