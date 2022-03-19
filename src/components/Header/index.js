@@ -2,15 +2,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.svg";
+import checatcoin from "../../assets/checatcoin.png";
 
 const Headers = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
-  background-color: var(--nav);
-  color: var(--white);
+  background-color: var(--black-op);
+  color: var(--yellow);
   position: relative;
   z-index: 500;
   @media only Screen and (max-width: 64em) {
@@ -24,7 +24,7 @@ const Headers = styled.header`
 const Logo = styled.a`
   display: flex;
   align-items: center;
-  width: 2rem;
+  width: 3rem;
   height: auto;
   cursor: pointer;
   img {
@@ -45,7 +45,7 @@ const Nav = styled.nav`
   a {
     font-weight: 600;
     line-height: 1.5;
-    color: var(--white);
+    color: var(--yellow);
     &::after {
       content: "";
       display: block;
@@ -56,7 +56,7 @@ const Nav = styled.nav`
     }
     &:not(:last-child):hover::after {
       width: 100%;
-      background: var(--purple);
+      background: var(--yellow);
     }
     /* &:not(:last-child) {
       margin-right: 2rem;
@@ -70,10 +70,10 @@ const Nav = styled.nav`
 `;
 
 const Button = styled.button`
-  background-color: var(--purple);
+  background-color: var(--yellow);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  color: var(--white);
+  color: var(--black);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
@@ -108,7 +108,7 @@ const HamburgerBtn = styled.button`
   &::before,
   &::after {
     content: "";
-    background-color: var(--white);
+    background-color: var(--yellow);
     width: 2rem;
     height: 2px;
     display: inline-block;
@@ -146,11 +146,11 @@ const MobileMenu = styled.nav`
   visibility: ${(props) => (props.clicked ? "visible" : "hidden")};
   transition: all 0.5s;
   z-index: -10;
-  background-color: rgb(53 53 63 / 95%);
+  background-color: var(--black);
   border-radius: 20px;
   margin: 0.5rem;
   a {
-    color: var(--white);
+    color: var(--yellow);
     font-weight: 600;
     font-size: 1.5rem;
     margin: 1.5rem;
@@ -190,11 +190,10 @@ const Header = () => {
         top: "0",
         left: "0",
         right: "0",
-        padding: "1rem 2.5rem",
 
         borderRadius: "0 0 50px 50px",
 
-        border: "2px solid var(--white)",
+        border: "2px solid var(--yellow)",
 
         duration: 1,
         ease: "power1.out",
@@ -212,11 +211,10 @@ const Header = () => {
         top: "1rem",
         left: "3rem",
         right: "3rem",
-        padding: "1.5rem 2rem",
 
         borderRadius: "50px",
 
-        border: "3px solid var(--white)",
+        border: "3px solid var(--yellow)",
 
         duration: 1,
         ease: "power1.out",
@@ -234,38 +232,38 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="BBJUL" />
-        <h3>BBJUL</h3>
+        <img src={checatcoin} alt="checat coin logo" />
+        {/* <h3>OnlyCats</h3> */}
       </Logo>
       <Nav>
-        <a href="#home" onClick={(e) => scrollUp("home", e)}>
-          LOVNI
-        </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
-          Le x100
+          REVOLUTION
         </a>
         <a href="#services" onClick={(e) => scrollUp("services", e)}>
-          KIT-E
+          TOKEN
+        </a>
+        <a href="#soon" onClick={(e) => scrollUp("soon", e)}>
+          SOON
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <Button>CONTACT</Button>
+          <Button>ARMY</Button>
         </a>
       </Nav>
       <HamburgerBtn clicked={click} onClick={() => setClick(!click)}>
         <span></span>
       </HamburgerBtn>
       <MobileMenu clicked={click}>
-        <a href="#home" onClick={(e) => handleClick("home", e)}>
-          LOVNI
-        </a>
         <a href="#about" onClick={(e) => handleClick("about", e)}>
-          Le x100
+          REVOLUTION
         </a>
         <a href="#services" onClick={(e) => handleClick("services", e)}>
-          KIT-E
+          TOKEN
+        </a>
+        <a href="#soon" onClick={(e) => handleClick("soon", e)}>
+          SOON
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-          <Button>CONTACT</Button>
+          <Button>ARMY</Button>
         </a>
       </MobileMenu>
     </Headers>

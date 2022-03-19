@@ -7,12 +7,16 @@ const Rb = styled.div`
   align-items: center;
   width: 40%;
   position: relative;
-  svg {
-    width: 100%;
-    height: auto;
+  img {
+    border-radius: 1rem;
+    height:350px;
   }
   @media only Screen and (max-width: 48em) {
-    display: none;
+  width: auto;
+  img {
+    margin-top: 5rem;
+    height:auto;
+  }
   }
 `;
 

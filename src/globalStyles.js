@@ -6,22 +6,25 @@ export const GlobalStyle = createGlobalStyle`
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #35353f;
+  background: #262626;
 }
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(rgba(238,174,202), rgba(148,187,233));
+  background-image: linear-gradient(#FFF200, #262626);
   border-radius: 10px;
   transition: 0.5s;
 }
 
 :root{
    --background: #35353f;
-   --black:#0a0b10;
+   --black:#262626;
+   --black-op:rgba(37,37,37,.9);
    --purple:#803bec;
-   --pink:#e5a1f8;
+   --pink:#1EB8F2;
    --white:#fff;
-   --nav:#35353f;
+   --nav:#000;
    --nav2:#3f3d56;
+   --yellow: #FFF200;
+   --red: #F90001;
 }
 
 
@@ -85,4 +88,3 @@ html{
 
 `;
 
-//  /* Colors */

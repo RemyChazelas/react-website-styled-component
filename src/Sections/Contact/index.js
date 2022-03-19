@@ -1,22 +1,22 @@
-import Facebook from "../../assets/facebook-square-brands.svg";
-import LinkedId from "../../assets/linkedin-brands.svg";
-import Twitter from "../../assets/twitter-square-brands.svg";
-import Instagram from "../../assets/instagram-square-brands.svg";
+import Facebook from "../../assets/fb.png";
+import Telegram from "../../assets/telegram.png";
+import Twitter from "../../assets/twit.png";
+import Instagram from "../../assets/insta.png";
 import styled from "styled-components";
 
 const ContactSection = styled.section`
   width: 100vw;
-  padding: calc(2.5rem + 2.5vw) 0;
-  background-color: #0a0b10;
+  padding: 5rem 1rem 2rem 1rem;
+  background-color: var(--black-op);
+
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   justify-content: center;
 `;
 
 const Title = styled.h1`
-  color: var(--white);
+  color: var(--yellow);
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -29,8 +29,7 @@ const Title = styled.h1`
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 0.5rem);
-    /* or 100px */
-    border-bottom: 2px solid var(--pink);
+    border-bottom: 2px solid var(--yellow);
   }
 `;
 
@@ -40,7 +39,7 @@ const Icons = styled.div`
   a {
     &:hover {
       img {
-        filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
+        filter: invert(75%) sepia(100%) saturate(500%) hue-rotate(212deg)
           brightness(100%) contrast(97%);
       }
     }
@@ -54,122 +53,25 @@ const Icons = styled.div`
   }
 `;
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  input {
-    padding: 1rem calc(0.5rem + 1vw);
-    margin-bottom: 1rem;
-    background-color: var(--nav2);
-    border: none;
-    border-radius: 4px;
-    color: #eff7f8;
-    &:active,
-    &:focus {
-      border: none;
-      outline: none;
-      background-color: var(--nav);
-    }
-    &::placeholder {
-      color: #eff7f8;
-      opacity: 0.6;
-    }
-    &[name="name"] {
-      margin-right: 2rem;
-    }
-  }
-  textarea {
-    padding: 1rem calc(0.5rem + 1vw);
-    margin-bottom: 1rem;
-    background-color: var(--nav2);
-    border: none;
-    border-radius: 4px;
-    color: #eff7f8;
-    margin-bottom: 2rem;
-    &:focus,
-    &:active {
-      background-color: var(--nav);
-    }
-    &::placeholder {
-      color: #eff7f8;
-      opacity: 0.6;
-    }
-  }
-  button {
-    padding: 0.8rem 2rem;
-    background-color: var(--white);
-    border-radius: 20px;
-    font-size: 1.2rem;
-    color: #0a0b10;
-    cursor: pointer;
-    transition: transform 0.3s;
-    &:hover {
-      transform: scale(1.1);
-    }
-    &:active {
-      transform: scale(0.9);
-    }
-  }
-`;
 
-const Row = styled.div`
-  @media only Screen and (max-width: 40em) {
-    display: flex;
-    flex-direction: column;
-    input {
-      &[name="name"] {
-        margin-right: 0;
-      }
-    }
-  }
-`;
 const Contact = () => {
   return (
     <ContactSection id="contact">
-      <Title>Get in touch</Title>
-      {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
+      <Title>FOLLOW US AND JOIN REVOLUTION ARMY OF CATS</Title>
       <Icons>
-        <a href="https://www.facebook.com/">
-          {" "}
-          <img src={Facebook} alt="Facebook" />
+        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <img src={Facebook} alt="Facebook icon" />
         </a>
-        <a href="https://www.linkedin.com//">
-          <img src={LinkedId} alt="LinkedId" />
+        <a href="https://t.me/CheCatCoin" target="_blank" rel="noreferrer">
+          <img src={Telegram} alt="Telegram icon" />
         </a>
-        <a href="https://twitter.com/">
-          <img src={Twitter} alt="Twitter" />
+        <a href="https://twitter.com/ChecatCoin" target="_blank" rel="noreferrer">
+          <img src={Twitter} alt="Twitter icon" />
         </a>
-        <a href="https://www.instagram.com/">
-          <img src={Instagram} alt="Instagram" />
+        <a href="https://www.instagram.com/checatcoin/" target="_blank" rel="noreferrer" >
+          <img src={Instagram} alt="Instagram icon" />
         </a>
       </Icons>
-      <Form>
-        <Row>
-          <input name="name" type="text" placeholder="your name" />
-          <input
-            name="email"
-            type="email"
-            placeholder="enter working email id"
-          />
-        </Row>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="2"
-          placeholder="your message"
-        ></textarea>
-        <div style={{ margin: "0 auto" }}>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-          >
-            Submit
-          </button>
-        </div>
-      </Form>
     </ContactSection>
   );
 };
