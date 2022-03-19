@@ -13,8 +13,8 @@ export const Up = styled.div`
   line-height: 1.5715;
   list-style: none;
   position: fixed;
-  right: 100px;
-  bottom: 80px;
+  right: 1.5rem;
+  bottom: 1.5rem;
   z-index: 10;
   width: 40px;
   height: 40px;
@@ -23,11 +23,11 @@ export const Up = styled.div`
     display: none;
   }
   img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    border: .04rem solid var(--black);
-    background: var(--black);
+    border: .08rem solid var(--yellow);
+    background: var(--yellow);
     transition: transform 0.3s;
     display: none;
     &:hover {

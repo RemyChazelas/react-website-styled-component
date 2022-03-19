@@ -53,37 +53,11 @@ const CatImgContainer = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
-  &::before{
-    content:'';
-    position: absolute;
-    width: 100px;
-    height: 150%;
-    background: var(--red);
-    animation: animate 4s linear infinite;
-  }
-  &::after{
-    content:'';
-    position: absolute;
-    inset: 4px ;
-    background: var(--yellow);
-  border-radius: .7rem;
-
-  }
-  @keyframes animate 
-  {
-    0%
-    {
-      transform: rotate(0deg)
-    }
-    100%
-    {
-      transform: rotate(360deg)
-    }
-  }
+  
   img {
     border-radius: 1rem;
     height:350px;
-    z-index:2;
+    /* z-index:2; */
     transform: scale(.9) ;
 
   }

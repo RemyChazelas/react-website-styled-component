@@ -57,14 +57,6 @@ const Nav = styled.nav`
       width: 100%;
       background: var(--yellow);
     }
-    /* &:not(:last-child) {
-      margin-right: 2rem;
-    } */
-    /* @media only Screen and (max-width: 48em) {
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    } */
   }
 `;
 
@@ -158,7 +150,6 @@ const MobileMenu = styled.nav`
 `;
 const Header = () => {
   const [click, setClick] = useState(false);
-  //const handleClick = () => setClick(!click);
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -182,7 +173,6 @@ const Header = () => {
     const element = ref.current;
 
     const mq = window.matchMedia("(max-width: 40em)");
-    // console.log("mq", mq);
     if (mq.matches) {
       gsap.to(element, {
         position: "fixed",
@@ -220,7 +210,7 @@ const Header = () => {
 
         scrollTrigger: {
           trigger: element,
-          start: "bottom+=300 top",
+          start: "bottom+=250 top",
           end: "+=250",
           scrub: true,
         },

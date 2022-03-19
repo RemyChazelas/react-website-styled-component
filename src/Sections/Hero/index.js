@@ -73,8 +73,8 @@ const Title = styled.h1`
 
 const CTA = styled.button`
   background:var(--black) ;
-  box-shadow:  2px -2px 2px #131313,
-             -2px 2px 2px #393939;
+  box-shadow: inset 2px -2px 2px #131313,
+            inset -2px 2px 2px #393939; 
   color:var(--yellow);
   padding: 0.5rem 1rem;
   margin-top: 1rem;
@@ -98,8 +98,9 @@ const CTA = styled.button`
   }
   &:active {
     background: var(--black);
-    box-shadow: inset 2px -2px 2px #131313,
-            inset -2px 2px 2px #393939;
+    box-shadow: 2px -2px 2px #131313,
+             -2px 2px 2px #393939;
+    transform: scale(1.05);
   }
 `;
 
