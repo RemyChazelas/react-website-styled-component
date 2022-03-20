@@ -43,7 +43,7 @@ const Title = styled.h1`
 const CurvedLine = styled.div`
   width: 7rem;
   height: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border: solid 5px var(--red);
   border-color: var(--red) transparent transparent transparent;
   border-radius: 150%/60px 70px 0 0;

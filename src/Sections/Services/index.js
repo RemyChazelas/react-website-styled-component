@@ -122,11 +122,20 @@ margin-bottom: 1rem;
 `;
 
 const TitleToken = styled(Title)`
-text-decoration: underline  var(--red);
+&::after {
+    content: "";
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0.5rem);
+    border-bottom: 2px solid var(--red);
+  }
 `;
 
 const SubText = styled.div`
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.6rem + 0.5vw);
   color: var(--yellow);
   @media only Screen and (max-width: 48em) {
     font-size: calc(0.5rem + 1vw);
