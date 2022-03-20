@@ -121,6 +121,10 @@ font-size: calc(1rem + 1vw);
 margin-bottom: 1rem;
 `;
 
+const TitleToken = styled(Title)`
+text-decoration: underline  var(--red);
+`;
+
 const SubText = styled.div`
   font-size: calc(0.5rem + 0.5vw);
   color: var(--yellow);
@@ -158,7 +162,7 @@ const Services = () => {
       </Content>
       <SubContent data-aos="zoom-in-up">
         <TextBlock>
-          <Title><h1>TOKEN</h1></Title>
+          <TitleToken><h1>TOKEN</h1></TitleToken>
           <SubTitle><h2>TOKENOMICS</h2></SubTitle>
           <SubText>
             <h5>

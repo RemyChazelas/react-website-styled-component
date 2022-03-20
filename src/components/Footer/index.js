@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const FOOTER = styled.footer`
-background-color: var(--black-op);
+background-color: var(--black);
   padding: 1.2rem calc(2.5rem + 2.5vw);
   font-size: 1rem;
   display: flex;
@@ -37,7 +37,7 @@ const Footer = () => {
         <a href="https://remychazelas.com" target="_blank" rel="noreferrer">
           Remy Chazelas
         </a>
-        &nbsp;| designed w/ love
+        &nbsp;- designed w/ love
       </LeftText>
 
     </FOOTER>

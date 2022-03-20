@@ -7,7 +7,7 @@ import styled from "styled-components";
 const ContactSection = styled.section`
   width: 100vw;
   padding: 5rem 1rem 2rem 1rem;
-  background-color: var(--black-op);
+  background-color: var(--black);
 
   display: flex;
   flex-direction: column;

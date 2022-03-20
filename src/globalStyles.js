@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 :root{
    --background: #35353f;
    --black:#262626;
-   --black-op:rgba(37,37,37,.9);
+   --black-op:rgba(37,37,37,.97);
    --purple:#803bec;
    --pink:#1EB8F2;
    --white:#fff;
@@ -35,9 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
 }
 html{
-  ${"" /* overflow-y: scroll; */}
   scroll-behavior:smooth;
-  
 }
     body,
     html,
@@ -45,13 +43,11 @@ html{
         font-family: 'Poppins', sans-serif;
             }
     body {
-
         margin:0;
         padding:0;
         border: 0;
         outline: 0;
-        background: var(--background);
-
+        background: center center / cover no-repeat fixed url('/catbg.png');
         overflow-x: hidden;
     }
     h1,
