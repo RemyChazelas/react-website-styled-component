@@ -6,6 +6,9 @@ const AboutSection = styled.section`
   position: relative;
   display: flex;
   background:var(--black-op);
+  @media only Screen and (max-width: 48em) {
+  background:var(--black);
+  }
   flex-direction: column;
   justify-content: center;
   align-items: center;

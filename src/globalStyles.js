@@ -49,6 +49,9 @@ html{
         outline: 0;
         background: center center / cover no-repeat fixed url('/catbg.png');
         overflow-x: hidden;
+        @media only Screen and (max-width: 48em) {
+            background:var(--yellow);
+  }
     }
     h1,
     h2,
