@@ -27,7 +27,11 @@ const Logo = styled.a`
   width: 3rem;
   height: auto;
   img {
+    transition: transform .2s linear;
     margin-right: 0.5rem;
+    &:hover{
+      transform: scale(1.5)
+    }
   }
 `;
 
@@ -55,7 +59,7 @@ const Nav = styled.nav`
     }
     &:not(:last-child):hover::after {
       width: 100%;
-      background: var(--yellow);
+      background: var(--red);
     }
   }
 `;
